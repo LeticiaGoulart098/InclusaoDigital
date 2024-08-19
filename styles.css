@@ -14,7 +14,8 @@ header {
     color:  #ffffff;
     font-size: 30px;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
+    border: 4px solid #5e5c5c;
 }
 
 header h1 {
@@ -36,9 +37,6 @@ nav {
     text-align: justify;
 }
 
-section#inicio p {
-    text-align: center;
-}
 
 li > a {
     background-color: #002eac;
@@ -72,12 +70,32 @@ nav ul li a {
     font-weight: bold;
 }
 
-section {
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 8px;
+.container {
+    padding: 5px;
+    display: grid;
+}
+
+.img {
+    grid-column-start: 2;
+    grid-row-end: 1;
+}
+
+.img2 {
+    grid-column-start: 3;
+    grid-row-end: 1;
+
+}
+
+.containerinicio {
+    display: grid;
+}
+
+.inicio {
+    padding: 10px;
+    border: 4px solid white;
     color: white;
 }
+
 
 h1 {
     color: white;
@@ -91,6 +109,7 @@ h2 {
 h3 {
     color: #002eac;
 }
+
 
 form {
     display: flex;
@@ -132,18 +151,24 @@ footer {
     width: 100%;
 }
 
-section#inicio {
+.inicio {
+    border: 1px solid #002eac;
     text-align: justify;
     background-color: #242424;
 }
 
-section#inicio h3 {
+
+.inicio h2 {
     background-color: #002eac;
     color: white;
     text-align: center;
 }
 
 section#sobre {
+    width: 60%;
+    float: right;
+    padding: 10px;
+    border: 4px solid #002eac;
     text-align: left;
     background-color: #242424;
 }
@@ -156,11 +181,16 @@ section#sobre h2 {
 
 section#sobre h3 {
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
-    color: #1150fd;
+    color: #ffffff;
+    font-weight: 500;
     text-align: left; 
+
 }
 
 section#cursos {
+    float: left;
+    width: 35%;
+    padding: 10px;
     background-color: #242424;
 }
 
@@ -188,6 +218,8 @@ section#cursos ul li a p {
 }
 
 section#cursos ul li {
+    border: #002eac 4px solid;
+    padding: 10px;
     font-size: 35px;;
     color: #ffffff;
     list-style: none;
@@ -195,18 +227,29 @@ section#cursos ul li {
 }
 
 section#cursos h2 {
+    padding: 10px;
     background-color: #002eac;
     color: white;
     text-align: center;
 }
 
-section#img {
-    background-color: #242424;
+section#img2 {
+    position: relative;
     text-align: center;
 }
 
-section#img2 {
+section#contato {
+    width: 34%;
+    padding: 20px;
+    border: 4px solid #002eac;
+    background-color: #242424;
+    
+}
+
+section#contato h2 {
     text-align: center;
+    background-color: #002eac;
+    color: white;
 }
 
 
@@ -228,6 +271,7 @@ section#img2 {
         text-align: left;
         padding: 1rem 0.5rem;
     }
+}
 
     nav ul {
         padding: 0;
@@ -254,4 +298,3 @@ section#img2 {
         width: 100%;
         font-size: 1rem;
     }
-}
